@@ -1,1 +1,3 @@
 I am testing to learn how to use GitHub
+
+I am playing with this file to understand how to use Commit in GitHub.
