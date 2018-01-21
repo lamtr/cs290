@@ -1,0 +1,40 @@
+/* CSS Document */
+/* Based on Week 2 Reading: http://eecs.oregonstate.edu/ecampus-video/CS290/core-content/html-css/html-tag-examples.html */
+table {
+    border-style:solid;
+}
+th, td {
+    border-style:solid;
+}
+/* I looked over this website, which had a similar example using <p>: 
+https://www.w3schools.com/cssref/sel_nth-child.asp 
+And I played with the code until I got it to work. */
+tr:nth-child(2n + 0) {
+    background: blue;
+} 
+tr:nth-child(2n + 1) {
+    background: green;
+}
+#myTHead {
+	background: none;
+}
+#myTFoot {
+	background: none;
+}
+/* Classes and id from www.3school.com */
+.theader_italics {
+	font-style: italic;
+}
+/* I did a Google Search on centering a <div> withni a <div>
+http://www.tipue.com/blog/center-a-div/ */
+.outer-content {
+	background-color:#F09;
+	width:75%;
+	padding: 20px;
+}
+.inner-content {
+	background-color:#06F;
+	width:75%;
+	margin: 0 auto;
+	text-align:center; 
+}
