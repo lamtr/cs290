@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- **********************************************************************************************
+** CODE: 		The html file is from Week 2 Reading Assignment on HTML and CSS
+** DESCRIPTION:	The minimal HTML is from:  http://eecs.oregonstate.edu/ecampus-video/CS290/core-content/html-css/html-css.html 
+** NOTE: 		From Piazza Question: Instructor recommended that students comment sections of their code, similar to CS Intro Courses	
+*************************************************************************************************** -->
+    <meta charset="UTF-8">
+    <title>CS290: Homework 1</title>
+    <!-- NOTE FOR TRANG LAM ABOUT TESTING THE CODE: There was a Piazza question about testing the code. Instructor informed students on Piazza that we are coding for modern browsers: Firefox and Chrome. -->
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+
+</head>
+<body>
+<!-- **********************************************************************************************
+** CODE: 		The <table> is from Week 2 Reading Assignment on HTML and CSS
+** DESCRIPTION: <table> is from 'The Table' section of the HTML Tag Examples:  		
+				http://eecs.oregonstate.edu/ecampus-video/CS290/core-content/html-css/html-tag-examples.html
+** NOTE: 		There was a Piazza Question on changing the rows using tr:nth-child
+				I needed more explanation so I also looked on www.w3schools: https://www.w3schools.com/cssref/sel_nth-child.asp
+           		The link had an example using <p> but I was able to play with the code until I got it.
+*************************************************************************************************** -->
+    <table border="1">
+	<caption>Movie and Book Titles with Additional Information</caption>
+     <thead>
+      	<tr id="myTHead">   
+           <th></th>
+           <th>Genre</th>
+           <th>A Classic or Not</th>
+           <th>Kid-Friendly or Not</th>
+           <th>Ratings (1 - 5 Stars)</th>
+           <th>Movie-version in Recent Years</th>
+      	</tr>       
+     </thead>
+     <!-- Code based on a Piazza Question on Homework 2 about <tfoot> -->
+     <tfoot>
+    	<tr id="myTFoot">
+          <td colspan="2">Footer 1: Titles chosen randomly.</td>
+          <td colspan="4">Footer 2: Ratings are based on Personal Preference.</td>
+        </tr>
+	 </tfoot>
+     <tbody>
+      	<tr>
+           <td class="theader_italics">A Wrinkle in Time</td>
+           <td>Sci-fi</td>
+           <td>Classic</td>
+           <td>Kid-friendly</td>
+           <td>5 Stars</td>
+           <td>Yes</td>
+      	</tr>
+        <tr>
+           <td class="theader_italics">Beauty and the Beast</td>
+           <td>Fantasy</td>
+           <td>Classic</td>
+           <td>Kid-friendly</td>
+           <td>5 Stars</td>
+           <td>Yes</td>           
+      	</tr>
+        <tr>
+           <td class="theader_italics">Ranger's Apprentice</td>
+           <td>Fantasy</td>
+           <td>Not</td>
+           <td>Kid-friendly</td>
+           <td>4 Stars</td>
+           <td>No</td>           
+      	</tr>
+        <tr>
+           <td class="theader_italics">Avengers</td>
+           <td>Super-hero</td>
+           <td>Not</td>
+           <td>Kid-friendly</td>
+           <td>5 Stars</td>
+           <td>Yes</td>           
+      	</tr>
+      	<tr>
+           <td class="theader_italics">Dresden Files</td>
+           <td>Fantasy</td>
+           <td>Not</td>
+           <td>Not</td>
+           <td>5 Stars</td>
+           <td>No</td>           
+      	</tr>
+     </tbody>
+    </table>
+
+<!-- **********************************************************************************************
+** CODE: 		The <ul> is from Week 2 Reading Assignment on HTML and CSS
+** DESCRIPTION:	<ul> is from 'Lists' section of the HTML Tag Examples:  
+				http://eecs.oregonstate.edu/ecampus-video/CS290/core-content/html-css/html-tag-examples.html
+** NOTE: 		No relevant notes for this section
+*************************************************************************************************** -->    
+    <ul>
+      <li>Reading</li>
+      <li>Writing</li>
+      <li>Talking</li>
+      <li>Sleeping</li>
+    </ul>
+
+<!-- **********************************************************************************************
+** CODE: 		The <div> is from Week 2 Reading Assignment on HTML and CSS
+** DESCRIPTION:	<div> is from 'The Div' section of the HTML Tag Examples:  
+				http://eecs.oregonstate.edu/ecampus-video/CS290/core-content/html-css/html-tag-examples.html
+** NOTE: 		No relevant notes for this section
+*************************************************************************************************** -->     
+    <div class="outer-content"><div class="inner-content">Here is some Content.</div></div>
+
+<!-- **********************************************************************************************
+** CODE: 		The <form> is from Week 2 Reading Assignment on HTML and CSS
+** DESCRIPTION:	<form> is from 'HTML Forms':  
+				http://eecs.oregonstate.edu/ecampus-video/CS290/core-content/html-css/html-forms.html
+** NOTE: 		No relevant notes for this section
+*************************************************************************************************** -->  
+    <br />
+    <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+
+    <fieldset>
+        <legend>Some GET Data:</legend>
+        
+		<fieldset>
+            <label>Text here:
+                <input type="text" name="text_input" size="30" maxlength="100">
+            </label>
+		</fieldset>
+        
+		<fieldset>
+            <label>Number here:
+                <input type="number" name="number_input" size="30" maxlength="100">
+            </label>
+		</fieldset>
+
+
+		<fieldset>
+            <label>Password here:
+                <input type="password" name="password_input" size="30" maxlength="100">
+            </label>
+		</fieldset>
+        
+        <fieldset>
+        <p>Select between: 
+            <br />
+            <label><input type="radio" name="candy" value="Snickers" />Snickers</label>
+            <br />    
+            <label><input type="radio" name="candy" value="Skittles" />Skittles</label>
+            <br />    
+            <label><input type="radio" name="candy" value="Mentos" />Mentos</label>
+        </p>
+        <input type="submit" value="Submit" />
+        </fieldset>
+        
+    </fieldset>
+	</form>  
+
+	<br />
+    <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+
+    <fieldset>
+        <legend>Some POST Data:</legend>
+        
+		<fieldset>
+            <label>Text here:
+                <input type="text" name="text_input" size="30" maxlength="100">
+            </label>
+		</fieldset>
+        
+		<fieldset>
+            <label>Number here:
+                <input type="number" name="number_input" size="30" maxlength="100">
+            </label>
+		</fieldset>
+
+
+		<fieldset>
+            <label>Password here:
+                <input type="password" name="password_input" size="30" maxlength="100">
+            </label>
+		</fieldset>
+        
+        <fieldset>
+        <p>Select between: 
+            <br />
+            <label><input type="radio" name="candy" value="Snickers" />Snickers</label>
+            <br />    
+            <label><input type="radio" name="candy" value="Skittles" />Skittles</label>
+            <br />    
+            <label><input type="radio" name="candy" value="Mentos" />Mentos</label>
+        </p>
+        <input type="submit" value="Submit" />
+        </fieldset>
+        
+    </fieldset>
+	</form> 
+
+
+</body>
+</html>
